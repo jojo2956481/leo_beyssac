@@ -3,11 +3,33 @@ body {
     font-family: Arial;
     margin: 0;
 }
-    
+.changeTheme {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--color1);
+    color: var(--color2);
+    border: 1px solid var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+:root {
+    --color1: #000;
+    --color2: #f1f1f1;
+    --color3: #6C829DC0;
+    --color4: #6C829D;
+    --color5: #f1f1f1;
+}
+
 p.categorie {
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: var(--color1);
+    color: var(--color2);
     display: inline-block;
     margin-top: 0px;
     padding: 8px 18px;
@@ -16,22 +38,24 @@ p.categorie {
     font-size: 16px;}
 
 div.contenue {
-    background-color: white;
+    background-color: var(--color5);
     margin: 40px 8px 40px 8px ;
     padding: 0px 8px 20px 8px;
-    box-shadow:  0 0 5em black;
+    box-shadow:  0 0 5em 
     
 }
 h1 {
     text-align: center;
     margin-bottom: 12px;
     margin-top: 10px;
+    color: var(--color1);
 }
 p.description {
     text-align: center;
     max-width: 400px;
     display: inline-block;
     font-size: 14px;
+    color: var(--color1);
 }
 .centre {
     text-align: center;
@@ -43,7 +67,7 @@ div.categorie {
     margin-top: 60px;
 }
 div.separateur {
-    background-color: black;
+    background-color: var(--color1);
     width: 150px;
     height: 2px;
     margin-left: auto;
@@ -57,19 +81,21 @@ div.infos {
 table.infos { position: absolute; 
     bottom: 0; 
     width: 100%; 
-    color: white;
-    background-color: #6C829DC0;
+    color: var(--color2);
+    background-color: var(--color3);
     height: 50px;
 }
 table.infos td {
     text-align: center;
     font-size: 14px;
     vertical-align: top;
+    color: var(--color2);
 }
 table.infos th {
     font-size: 14px;
     vertical-align: bottom;
     padding-bottom: 8px;
+    color: var(--color2);
 }
 image.infos {
     display: block;
@@ -86,8 +112,9 @@ div.colonne h2 {
     text-align:center;
     text-transform: uppercase;
     font-size: 15px;
-    border-bottom: 5px solid #6C829D;
+    border-bottom: 5px solid var(--color4);
     padding-bottom:5px ;
+    color: var(--color1);
 }
 div.colonne {
     width: 100%;
@@ -95,17 +122,18 @@ div.colonne {
 
 }
 div.border p {
-    border: 2px solid #6C829DC0 ;
+    border: 2px solid var(--color3) ;
     text-align: center;
     padding: 2px;
     font-size: 8px 0;
     margin-top: 4px;
     margin-bottom: 0;
+    color: var(--color1);
 
 }
 table.preparation p.numero {
-    background-color: #6C829D ;
-    color: white;
+    background-color: var(--color4) ;
+    color: var(--color2);
     width: 25px;
     height: 25px;
     text-align: center;
@@ -123,6 +151,7 @@ table.preparation td.preparation_etape {
     font-size: 14px;
     padding-left: 10px;
     padding-bottom: 10px;
+    color: var(--color1);
 }
 table.preparation tr {
     height: 40px;
@@ -132,14 +161,15 @@ table.preparation tr {
     overflow: auto;
 }
 
+
 @media only screen and (min-width: 768px) {
 
     div.contenue {
-        background-color: white;
+        background-color: var(--color2);
         margin: 0px 10% 80px 10% ;
         padding: 30px;
         min-width: 350px;
-        box-shadow:  0 0 5em black;
+        box-shadow:  0 0 5em var(--color1);
     }
 
     div.categorie {
@@ -156,8 +186,8 @@ table.preparation tr {
     table.infos { position: absolute; 
         bottom: 0; 
         width: 100%; 
-        color: white;
-        background-color: #6C829DC0;
+        color: var(--color2);
+        background-color: var(--color3);
         height: 80px;
     }
 
@@ -185,7 +215,5 @@ table.preparation tr {
         width: 648px;
     }
 
-
-
-
 }
+
