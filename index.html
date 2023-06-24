@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyssac_Leo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- couveture -->
+    <div class="cover">
+        <div class="changeTheme">Go nuit</div>
+        <script>
+        const switchThemeBtn = document.querySelector('.changeTheme') ;
+        let toggleTheme = 0;
+
+
+        switchThemeBtn.addEventListener('click', () => {
+
+
+            if(toggleTheme === 0) {
+
+                document.documentElement.style.setProperty('--color1', ' #FF8C00');
+                document.documentElement.style.setProperty('--color2', '#000');
+                document.documentElement.style.setProperty('--color3', '#808080');
+                document.documentElement.style.setProperty('--color6', '#F4F4F4');
+                document.documentElement.style.setProperty('--color7', '#656565');
+                toggleTheme++;
+                
+
+            } else {
+                
+                document.documentElement.style.setProperty('--color1', ' #D89584');
+                document.documentElement.style.setProperty('--color2', 'F4F4F4 ');
+                document.documentElement.style.setProperty('--color3', 'lightgray');
+                document.documentElement.style.setProperty('--color6', '#000');
+                document.documentElement.style.setProperty('--color7', '#F4F4F4');
+                toggleTheme--;
+            }
+
+
+        } )
+
+
+        </script>
+        <img class="cover-profile" src="IMG_0004.png"/>
+        <h1>Léo BEYSSAC</h1>
+        <p>Etudiant developpeur web | autodidacte</p>
+        <div style="text-align: center;">
+            <a class="boutton" href="mailto:leo.beyssac@gmx.com?subject=contact%20depuis%20Beyssac_Leo"> ME CONTACTER</a>
+        </div>
+        <div class="cover-contact">
+            <p><a href="mailto:leo.beyssac@gmx.com?subject=contact%20depuis%20Beyssac_Leo">leo.beyssac@gmx.com</a></p>
+            <p><a href="tel:+330608019614">06 08 01 96 14</a></p>
+        </div>
+    </div>
+
+    <!-- section grise1-->
+
+    <div class="section_grise1">
+        <br>
+        <div class="separateur"></div>
+        <div class="txt">
+            <p>j'apprends <b>l'informatique</b> de magnère <b>generale</b>: les systemes reséaux, l'algorithmique, developpement web ...</p>
+        </div>
+    </div>
+
+    <!-- section blanche-->
+    <div class="section">
+        <h2>En savoir plus</h2>
+        <img src="profile2.jpg" class="col-contenu">
+        <div class="col-contenu float-right">
+            <div class="text-avec-ligne-vertical">
+                <p>seulement Intrigué par l'iformatique, ceci est tres rapidement devenue une passion. <br> 
+                    je m'entraine de maniere generale dans le bute de preparer des ecoles d'informatique</p>
+                <a href="#">En savoir plus sur mon profile</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- section grise2-->
+    <div class="section_grise2">
+        <h2>portfolio</h2>
+        <table class = col-portfolio style="display: inline-block;">
+            <tr>
+                <td><div class="barra-verticale"></div></td>
+                <td><img style="width: 100%;" src="phising.jpg"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center"><a href="portfolio-site-restaurant.html">projet phishing</a></td>
+            </tr>
+        </table>
+        <table class="float-right col-portfolio resp-table" >
+            <tr>
+                <td><div class="barra-verticale"></div></td>
+                <td><img style="width: 100%;" src="project2small.jpg"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center"><a href="#">projet Intelligence artificielle</a></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <!-- section blanche-->
+    <div class="section">
+        <div class="frame">
+            <p class="frame-title">parlons de votre projet</p>
+           <table style="width: 100%;">
+            <tr>
+                <td valign="top" align="center"><img src="IMG_0004.png"></td>
+                <td>
+                    <div class="text-avec-ligne-vertical" style="margin-left: 20px;">
+                        <p>
+                            Besoin de discuter de votre projet
+                            et d'obtenir l'avis d'un expert ?
+                            <br><br>
+                            <a href="mailto:leo.beyssac@gmx.com?subject=contact%20depuis%20Beyssac_Leo">contacter moi par email</a> ou directement 
+                            par téléphone au <a href="tel:+330608019614">06 08 01 96 14</a>
+                        
+                        </p>
+                    </div>
+                </td>
+            </tr>
+           </table> 
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+
